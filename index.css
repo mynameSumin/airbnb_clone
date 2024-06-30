@@ -1,5 +1,136 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Courier New", Courier, monospace;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  height: 80px;
+  box-shadow: rgb(0 0 0 / 8%) 0 1px 0;
 }
 
 #logo {
@@ -46,6 +177,14 @@ button {
   box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
 }
 
+#little-search * {
+  cursor: pointer;
+}
+
+#little-search:hover {
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.18);
+}
+
 #magnifying_glass_wrapper {
   background-color: #ff385c;
   border-radius: 50%;
@@ -55,4 +194,38 @@ button {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+#header-right-section {
+  display: flex;
+  gap: 8px;
+}
+
+#do-airbnb {
+  color: #222222;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 7px 14px 7px 14px;
+  border-radius: 21px;
+  display: flex;
+  align-items: center;
+}
+
+#do-airbnb:hover {
+  background-color: #f7f7f7;
+}
+
+#profile-section {
+  display: flex;
+  align-items: center;
+  padding: 5px 5px 5px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 21px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+#profile-section:hover {
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.18);
 }
