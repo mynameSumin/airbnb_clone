@@ -39,5 +39,95 @@
         </div>
       </div>
     </header>
+    <div id="category-bar">
+      <button class="category-button" id="active-button">
+        <img src="./images/category/sea.jpg" alt="sea icon" />
+        <div>해변 바로 앞</div>
+      </button>
+      <button class="category-button">
+        <img src="./images/category/airplane_black.svg" alt="sea icon" />
+        <div>해외</div>
+      </button>
+      <button class="category-button">
+        <img src="./images/category/best_view.jpg" alt="sea icon" />
+        <div>최고의 전망</div>
+      </button>
+      <button class="category-button">
+        <img
+          src="./images/category/51f5cf64-5821-400c-8033-8a10c7787d69.jpg"
+          alt="sea icon"
+        />
+        <div>한옥</div>
+      </button>
+      <button class="category-button">
+        <img src="./images/category/sea.jpg" alt="sea icon" />
+        <div>해변 바로 앞</div>
+      </button>
+      <button class="category-button">
+        <img src="./images/category/airplane_black.svg" alt="sea icon" />
+        <div>해외</div>
+      </button>
+      <button class="category-button">
+        <img src="./images/category/best_view.jpg" alt="sea icon" />
+        <div>최고의 전망</div>
+      </button>
+      <button class="category-button">
+        <img
+          src="./images/category/51f5cf64-5821-400c-8033-8a10c7787d69.jpg"
+          alt="sea icon"
+        />
+        <div>한옥</div>
+      </button>
+    </button>
+    <button class="category-button">
+      <img src="./images/category/sea.jpg" alt="sea icon" />
+      <div>해변 바로 앞</div>
+    </button>
+    <button class="category-button">
+      <img src="./images/category/airplane_black.svg" alt="sea icon" />
+      <div>해외</div>
+    </button>
+    <button class="category-button">
+      <img src="./images/category/best_view.jpg" alt="sea icon" />
+      <div>최고의 전망</div>
+    </button>
+    <button class="category-button">
+      <img
+        src="./images/category/51f5cf64-5821-400c-8033-8a10c7787d69.jpg"
+        alt="sea icon"
+      />
+      <div>한옥</div>
+    </button>
+  </button>
+  <button class="category-button">
+    <img src="./images/category/sea.jpg" alt="sea icon" />
+    <div>해변 바로 앞</div>
+  </button>
+  <button class="category-button">
+    <img src="./images/category/airplane_black.svg" alt="sea icon" />
+    <div>해외</div>
+  </button>
+  <button class="category-button">
+    <img src="./images/category/best_view.jpg" alt="sea icon" />
+    <div>최고의 전망</div>
+  </button>
+  <button class="category-button">
+    <img
+      src="./images/category/51f5cf64-5821-400c-8033-8a10c7787d69.jpg"
+      alt="sea icon"
+    />
+    <div>한옥</div>
+  </button>
+    </div>
   </body>
+  <script>
+    document.querySelectorAll('.category-button').forEach(button => {
+      button.addEventListener("click", ()=> {
+        //원래 액티브인 애 없애기
+        document.querySelector("#active-button").removeAttribute('id');
+        //선택한 애 active id 주기
+        button.setAttribute('id', 'active-button');
+      })
+    })
+  </script>
 </html>
