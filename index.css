@@ -267,9 +267,64 @@ button {
 
 #active-button {
   color: #000000;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #000000;
 }
 
 #active-button img {
   opacity: 1;
+}
+
+/* list item part */
+.place-image-wrapper {
+  position: relative; /*얘를 부모로 인식*/
+  width: 308px;
+  height: 293px;
+  overflow: hidden;
+  border-radius: 23px;
+}
+
+.place-image-wrapper img {
+  width: 500px;
+  height: 500px;
+}
+
+.place-image-wrapper .heart-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.descript-section {
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 15px;
+  color: rgb(34, 34, 34);
+}
+
+.descript-section-title {
+  font-weight: 600;
+}
+
+main {
+  padding: 24px 80px;
+  text-align: center;
+}
+
+#place-items-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 308px);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 40px 24px;
+}
+
+.heart-icon:active {
+  transform: scale(0.7);
+  transition: transform 0.1s ease;
 }
